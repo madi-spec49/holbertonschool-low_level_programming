@@ -10,12 +10,17 @@
 */
 int main(void)
 
-{	char alphabet;
+{	char letter;
 
-	for ( alphabet = 'a'; alphabet <= 'z'; alphabet ++)
+	for ( letter = 'a'; letter <= 'z'; letter ++)
 
-	putchar (alphabet);
+	putchar (letter);
+	
+	for ( letter = 'A'; letter <= 'Z'; letter ++ )
 
-        putchar ('\n');
-        return (0);
+		putchar (letter);
+
+	putchar ('\n');
+		
+	return (0);
 }
