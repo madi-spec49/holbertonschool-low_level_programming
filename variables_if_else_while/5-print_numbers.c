@@ -4,7 +4,7 @@
  *
  * Description: prints all single numbers
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
