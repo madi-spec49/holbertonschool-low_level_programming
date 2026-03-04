@@ -2,23 +2,17 @@
 #include "main.h"
 /**
 *
-*  Description: a function that takes a pointer to an int
+*  Description: a function permute a values
 *
 *
 *
 */
 void swap_int(int *a, int *b)
+
 {
+	int c;
 
-
-
-
-
-
-
-
-
-
-
-
+	c = *a;
+	*a = *b;
+	*b = c;
 }
