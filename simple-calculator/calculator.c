@@ -8,8 +8,8 @@ int main (void)
     float sum;
     printf("Simple Calculator\n");
 
-while(1)
-{
+    while(1)
+    {
     printf("1) Add \n");
     printf("2) Subtract\n");
     printf("3) Multiply\n");
@@ -19,14 +19,18 @@ while(1)
     scanf("%d", &choice);
 
     printf("choice:%d\n", choice);
-
+    
     if (choice > 4 || choice < 0)
+    {
         printf("invalid choice\n");
+    }
     else if (choice == 0)
     {
         printf("Bye!\n");
+    
         break;
     }
+    
     if (choice == 1)
     {
         printf("a: \n");
@@ -41,7 +45,7 @@ while(1)
     }
     
         if (choice == 2)
-    {    
+        {    
         printf("a: \n");
         scanf("%f", &a);
         printf("b: \n");
@@ -52,7 +56,36 @@ while(1)
         sum = a - b;
         printf("Result: %.2f\n", sum);
 
+        }
+        if (choice == 3)
+        {
+        printf("a: \n");
+        scanf("%f", &a);
+        printf("b: \n");
+        scanf("%f", &b);
+
+        printf("a:%f\nb:%f\n", a, b);
+
+        sum = a * b;
+        printf("Result: %.2f\n", sum);
+        }
+        if (choice == 4)
+        {
+        printf("a: \n");
+        scanf("%f", &a);
+        printf("b: \n");
+        scanf("%f", &b);
+        }
+        
+            if (b == 0)
+            {
+            printf("Error: division by zero\n");
+            }    
+            else
+            {
+            sum = a / b;
+            printf("Result: %2.f\n", sum);
+            }
     }
-}
- return (0);
+    return (0);
 }
