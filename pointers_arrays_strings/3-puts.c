@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* _strlen - retourne la longueur d'une chaine
+* _puts- Returns the length of a string
+* @s: pointer to the string
 *
-* Description:la chaine de caractere
+* Description: function that prints a string, followed by a new line
 *
-* longeur de la chaine
+* Return: The length of the string.
 *
 */
 
