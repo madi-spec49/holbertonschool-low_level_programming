@@ -3,8 +3,10 @@
 int main (void)
 {
     int choice = 0;
+    float a;
+    float b;
+    float sum;
     printf("Simple Calculator\n");
-
 while(1)
 {
     printf("1) Add \n");
@@ -23,6 +25,20 @@ while(1)
     {
         printf("Bye!\n");
         break;
+    }
+    if (choice == 1)
+    {
+        printf("a: \n");
+        scanf("%f", &a);
+        printf("b: \n");
+        scanf("%f", &b);
+
+        printf("a:%f\nb:%f\n", a, b);
+        
+        sum = a + b;
+        printf("Result: %f\n", sum); 
+
+
     }
 }
  return (0);
