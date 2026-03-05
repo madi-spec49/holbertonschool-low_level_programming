@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
-* _strlen - retourne la longueur d'une chaine
+* _strlen - Returns the length of a string
+* @s: pointer to the string
+* Description: Calculates and returns the number of characters
+* in the string pointed to by s.
 *
-* Description:la chaine de caractere
-*
-* longeur de la chaine
-*
+* Return: The length of the string.
 */
 int _strlen(char *s)
-
 {
 	int count = 0;
 
