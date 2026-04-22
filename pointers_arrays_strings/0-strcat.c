@@ -1,19 +1,30 @@
 #include "main.h"
 
 /**
- * _memset - Fills memory with a constant byte
- * @s: Pointer to memory area
- * @b: The constant byte
- * @n: Number of bytes to fill
+ * _strcat - Concatenates two strings
+ * @dest: Destination string
+ * @src: Source string to append
  *
- * Return: Pointer to the memory area s
+ * Return: Pointer to the destination string
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	unsigned int i;
+	int i, j;
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
+	i = 0;
+	j = 0;
 
-	return (s);
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+
+	dest[i] = '\0';
+
+	return (dest);
 }
