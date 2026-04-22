@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
-* _puts - Prints a string
-*
-* @s: The string to print in reverse
-*
-*/
-
+ * print_rev - prints a string, in reverse, followed by a new line
+ * @s: the string to be printed
+ *
+ * Return: void
+ */
 void print_rev(char *s)
 {
 	int i = 0;
@@ -22,3 +21,4 @@ void print_rev(char *s)
 
 	_putchar('\n');
 }
+
